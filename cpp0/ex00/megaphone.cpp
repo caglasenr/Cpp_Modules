@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <cctype>
 
 int main(int argc, char **argv)
 {
@@ -16,7 +15,6 @@ int main(int argc, char **argv)
         {
             std::cout << static_cast<char> (std::toupper(arg[j]));
         }
-
 	}
 	std::cout << std::endl;
 	return 0;

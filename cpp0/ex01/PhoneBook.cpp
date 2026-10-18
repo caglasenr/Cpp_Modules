@@ -69,7 +69,7 @@ void	PhoneBook::_printTable(void) const
 
 void	PhoneBook::_printContact(int index) const
 {
-	const Contact	&c = this->_contacts[index];
+	const Contact	c = this->_contacts[index];
 
 	std::cout << "First name: " << c.getFirstName() << std::endl;
 	std::cout << "Last name: " << c.getLastName() << std::endl;
