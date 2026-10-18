@@ -4,8 +4,6 @@
 #include <string>
 #include "Weapon.hpp"
 
-// HumanB silahsız olabilir -> POINTER kullanırız.
-// Pointer NULL olabilir ve sonradan değiştirilebilir.
 class HumanB
 {
 public:

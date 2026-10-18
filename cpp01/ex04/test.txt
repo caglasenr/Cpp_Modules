@@ -1,4 +1,0 @@
-Hello world, hello 42!
-The cat sat on the cat mat.
-aaaa
-No match on this line.

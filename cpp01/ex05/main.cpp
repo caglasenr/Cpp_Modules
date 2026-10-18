@@ -13,6 +13,6 @@ int main(void)
 	std::cout << std::endl;
 	harl.complain("ERROR");
 	std::cout << std::endl;
-	harl.complain("RANDOM");	// Bilinmeyen seviye
+	harl.complain("RANDOM");
 	return (0);
 }

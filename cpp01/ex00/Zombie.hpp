@@ -15,9 +15,7 @@ private:
 	std::string	_name;
 };
 
-// Heap'te zombi oluşturur, dışarıda kullanılmak üzere geri döndürür
 Zombie	*newZombie(std::string name);
-// Stack'te zombi oluşturur, konuşturur; fonksiyon bitince zombi yok olur
 void	randomChump(std::string name);
 
 #endif

@@ -1,7 +1,6 @@
 #include "HumanA.hpp"
 #include <iostream>
 
-// Referans üye SADECE initialization list ile bağlanabilir
 HumanA::HumanA(std::string name, Weapon &weapon) : _name(name), _weapon(weapon)
 {
 }

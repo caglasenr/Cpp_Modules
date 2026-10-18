@@ -8,7 +8,6 @@ Weapon::~Weapon(void)
 {
 }
 
-// Kopya değil, const referans döner: değiştirilemez ve kopyalama maliyeti yok
 const std::string	&Weapon::getType(void) const
 {
 	return (this->_type);

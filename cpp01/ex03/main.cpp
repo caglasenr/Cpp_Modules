@@ -2,7 +2,6 @@
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
-// Subject'teki test kodu
 int main(void)
 {
 	{

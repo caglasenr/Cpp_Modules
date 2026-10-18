@@ -4,8 +4,6 @@
 #include <string>
 #include "Weapon.hpp"
 
-// HumanA her zaman silahlıdır -> REFERANS kullanırız.
-// Referans boş olamaz ve constructor'da bağlanmak zorundadır.
 class HumanA
 {
 public:

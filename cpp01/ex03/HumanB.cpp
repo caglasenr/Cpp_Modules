@@ -1,7 +1,6 @@
 #include "HumanB.hpp"
 #include <iostream>
 
-// Başlangıçta silahı yok
 HumanB::HumanB(std::string name) : _name(name), _weapon(NULL)
 {
 }

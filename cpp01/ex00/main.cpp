@@ -8,9 +8,9 @@ int main(void)
 	heapZombie->announce();
 
 	std::cout << "--- Stack zombisi (randomChump) ---" << std::endl;
-	randomChump("Bar");	// Fonksiyon bitince Bar kendiliğinden yok olur
+	randomChump("Bar");
 
 	std::cout << "--- Heap zombisini siliyoruz ---" << std::endl;
-	delete heapZombie;	// Heap'teki zombiyi biz silmek zorundayız
+	delete heapZombie;
 	return (0);
 }

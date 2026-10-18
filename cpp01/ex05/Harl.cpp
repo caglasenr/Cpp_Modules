@@ -37,8 +37,6 @@ void	Harl::error(void)
 			  << std::endl;
 }
 
-// if/else ormanı yerine: seviye isimleri ve üye fonksiyon pointer'ları
-// aynı sırada iki dizide. İsmi bul, aynı indeksteki fonksiyonu çağır.
 void	Harl::complain(std::string level)
 {
 	std::string	levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
@@ -53,7 +51,7 @@ void	Harl::complain(std::string level)
 	{
 		if (level == levels[i])
 		{
-			(this->*functions[i])();	// Üye fonksiyon pointer'ı ile çağrı
+			(this->*functions[i])();
 			return ;
 		}
 	}

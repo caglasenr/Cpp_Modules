@@ -6,7 +6,7 @@
 class Zombie
 {
 public:
-	Zombie(void);	// new Zombie[N] için parametresiz constructor şart
+	Zombie(void);
 	~Zombie(void);
 
 	void	announce(void);
@@ -16,7 +16,6 @@ private:
 	std::string	_name;
 };
 
-// Tek bir new[] ile N zombi oluşturur, ilk zombinin adresini döner
 Zombie	*zombieHorde(int N, std::string name);
 
 #endif
