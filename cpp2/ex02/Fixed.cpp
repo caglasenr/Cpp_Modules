@@ -1,7 +1,6 @@
 #include "Fixed.hpp"
 #include <cmath>
 
-/* ---------------- Orthodox Canonical Form ---------------- */
 
 Fixed::Fixed() : _value(0)
 {
@@ -30,7 +29,6 @@ Fixed::~Fixed()
 {
 }
 
-/* ---------------- Accessors / conversions ---------------- */
 
 int Fixed::getRawBits(void) const
 {
@@ -52,7 +50,6 @@ int Fixed::toInt(void) const
 	return this->_value >> _fractionalBits;
 }
 
-/* ---------------- Comparison operators ---------------- */
 
 bool Fixed::operator>(const Fixed &other) const
 {
@@ -84,7 +81,6 @@ bool Fixed::operator!=(const Fixed &other) const
 	return this->_value != other._value;
 }
 
-/* ---------------- Arithmetic operators ---------------- */
 
 Fixed Fixed::operator+(const Fixed &other) const
 {
@@ -118,7 +114,6 @@ Fixed Fixed::operator/(const Fixed &other) const
 	return result;
 }
 
-/* ---------------- Increment / decrement ---------------- */
 
 Fixed &Fixed::operator++(void)
 {
@@ -148,7 +143,6 @@ Fixed Fixed::operator--(int)
 	return old;
 }
 
-/* ---------------- min / max ---------------- */
 
 Fixed &Fixed::min(Fixed &a, Fixed &b)
 {
@@ -170,7 +164,6 @@ const Fixed &Fixed::max(const Fixed &a, const Fixed &b)
 	return (a > b) ? a : b;
 }
 
-/* ---------------- Stream insertion ---------------- */
 
 std::ostream &operator<<(std::ostream &os, const Fixed &fixed)
 {
